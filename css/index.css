@@ -1,0 +1,173 @@
+@keyframes Right_SlideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes safe_title_text {
+    0% {
+        color: rgb(254, 254, 254);	
+    }
+	100% {
+        color: rgb(255, 0, 0);
+	}
+}
+@keyframes nice_title_text {
+    0% {
+        color: rgb(254, 254, 254);	}
+	100% {
+        color: rgb(255, 0, 221);
+	}
+}
+@keyframes health_title_text {
+    0% {
+        color: rgb(254, 254, 254);
+    }
+	100% {
+        color: rgb(255, 208, 0);
+	}
+}
+body{
+    margin: 0;
+}
+.background{
+    margin: 0;
+}
+.head_content{
+    margin-left: 60%;
+}
+.logo_background{
+    display: flex;
+    padding-top: 1%;
+    width: 100%;
+    position: fixed;
+    background-color: aliceblue;
+    transition: .5s; /* スクロール時に一瞬で消えると物足りないので.hideの処理を0.5秒で行う */
+}
+.hide_top{
+	transform: translateY(-100%); /* 上に消えるようにする */
+}
+.hide_right{
+	transform: translatex(100%); /* 上に消えるようにする */
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.logo{
+    margin-left: 1%;
+    width: 300px;
+    height: 60px;
+}
+.content_title_main{
+    text-shadow: 1px 1px 1px #aeaeae;
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    font-weight:570;
+
+}
+.content_title_text{
+    text-shadow: 1px 1px 1px #6b6b6b;
+    font-size: 40px;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    font-weight:570;
+}
+.safe_title_text{
+
+    animation: safe_title_text 4s ease 0s 1 normal forwards;
+}
+.nice_title_text{
+    
+    animation: nice_title_text 4s ease 0s 1 normal forwards;
+}
+.health_title_text{
+    
+    animation: health_title_text 4s ease 0s 1 normal forwards;
+}
+.content_title_background{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 17%;
+}
+.background_img{
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+.background_img img{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact_button{
+    background: linear-gradient(#ff5100, #ff8400);
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 5%;
+    box-shadow: -1px -1px 5px 0 rgba(0, 0, 0, 0.548)
+}
+.contact_button:hover{
+    background: linear-gradient(#ff8400,#ff5100);
+
+}
+.contact_button_background{
+    margin-left: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 3%;
+}
+.contents_background{
+    background-color: rgb(248, 252, 255);
+}
+.map{
+    margin-top: 4%;
+}
+.requests{
+    animation: Right_SlideIn .5s ease normal;
+    display: none;
+    transition: .5s; /* スクロール時に一瞬で消えると物足りないので.hideの処理を0.5秒で行う */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight:500;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 13%;
+    position: fixed;
+    z-index: 5;
+    width: 100px;
+    font-size: 23px;
+    border-radius: 7px 0px 0px 7px;
+    height: 200px;
+    padding: 1%;
+    background-color: #ff8400;
+    box-shadow: -1px -1px 5px 0 rgba(0, 0, 0, 0.548)
+}
+.fixed_background {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    margin-top: 5%;
+    text-align: center;
+    color: black;
+    padding: 1%;
+}
+
+.index_main_video{
+
+    position:fixed;
+    z-index: -5;
+    width: 100%;
+}
