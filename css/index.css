@@ -58,7 +58,6 @@ body{
     flex-wrap: wrap;
 }
 .logo{
-    margin-left: 1%;
     width: 300px;
     height: 60px;
 }
@@ -71,7 +70,7 @@ body{
 }
 .content_title_text{
     text-shadow: 1px 1px 1px #6b6b6b;
-    font-size: 40px;
+    font-size: 2.5vw;
     color: rgb(254, 254, 254);
     text-align: center;
     font-weight:570;
@@ -106,14 +105,13 @@ body{
 .contact_button{
     background: linear-gradient(#ff5100, #ff8400);
     border-radius: 5px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
     color: rgb(247, 247, 247);
     text-decoration: none;
     font-size: 20px;
-    margin-bottom: 5%;
     box-shadow: -1px -1px 5px 0 rgba(0, 0, 0, 0.548)
 }
 .contact_button:hover{
@@ -124,13 +122,13 @@ body{
     margin-left: auto;
     margin-left: auto;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 6%;
 }
 .contents_background{
     background-color: rgb(248, 252, 255);
 }
 .map{
-    margin-top: 4%;
+    margin-top: 7%;
 }
 .requests{
     animation: Right_SlideIn .5s ease normal;
@@ -152,17 +150,24 @@ body{
     background-color: #ff8400;
     box-shadow: -1px -1px 5px 0 rgba(0, 0, 0, 0.548)
 }
+.requests img{
+    width: 100%;
+    margin-top: 35%;
+}
 .fixed_background {
-    min-height: 100vh;
+    min-height: 50vw;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 footer{
     margin-top: 5%;
+    padding-top: 2%;
     text-align: center;
     color: black;
-    padding: 1%;
+    background-color: rgb(44, 211, 252);
+    width: 100%;
+    height: 50px;
 }
 
 .index_main_video{
@@ -170,4 +175,16 @@ footer{
     position:fixed;
     z-index: -5;
     width: 100%;
+}
+@media screen and (max-width:1600px) {
+
+    .background_img img{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .head_content{
+        display: none;
+    }
 }
