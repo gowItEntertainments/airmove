@@ -179,6 +179,18 @@ footer{
 }
 @media screen and (max-width:1600px) {
 
+    .contact_button{
+        background: linear-gradient(#ff5100, #ff8400);
+        border-radius: 5px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 8%;
+        padding-right: 8%;
+        color: rgb(247, 247, 247);
+        text-decoration: none;
+        font-size: 40px;
+        box-shadow: -1px -1px 5px 0 rgba(0, 0, 0, 0.548)
+    }
     .background_img img{
         width:100%;
         margin-left: auto;
