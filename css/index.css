@@ -179,6 +179,14 @@ footer{
 }
 @media screen and (max-width:1600px) {
 
+    .content_title_text{
+        text-shadow: 1px 1px 1px #6b6b6b;
+        font-size: 3.5vw;
+        color: rgb(254, 254, 254);
+        text-align: center;
+        font-weight:570;
+    }
+
     .contact_button{
         background: linear-gradient(#ff5100, #ff8400);
         border-radius: 5px;
